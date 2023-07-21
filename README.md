@@ -2,7 +2,7 @@
 
 ## Description
 
-This project aims to provide a comprehensive and user-friendly messaging platform named "Slack" that allows users to communicate efficiently within workspaces. It supports user registration, login, workspace creation, and messaging features.
+This project aims to provide a comprehensive and user-friendly messaging platform named "Slack" that allows users to communicate efficiently within workspaces. It supports user registration, login, workspace creation, and messaging features. The messaging system utilizes Redis to store and retrieve messages efficiently. Messages are first fetched from Redis, excluding the messages in Redis, and if the number of sent messages exceeds 10, the messages are stored in the database. If there's a failure during message delivery, the message is temporarily saved in Redis for a subsequent attempt. Once all sent messages are stored in the database, the "all messages" object is cleared, and all message events are triggered, updating the message records in the "all messages" object.
 
 ## Table of Contents
 
