@@ -98,4 +98,4 @@ Contributions to this project are welcome. If you find any issues or have sugges
 
 This project is licensed under the [MIT License](LICENSE). For detailed information, please refer to the [License](LICENSE) file.
 
-For further details, contact the project owner.
+For further details, contact through email awaishamza579@gmail.com.
